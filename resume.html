@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Kumar </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" xintegrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .section-title {
+            border-bottom: 2px solid #D1D5DB; /* gray-300 */
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        /* Custom styles for the loader */
+        .loader {
+            border-top-color: #3498db;
+            -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+        }
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .no-print {
+             /* This class will be used to hide elements from the PDF */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="max-w-4xl mx-auto p-4 sm:p-8 bg-white shadow-lg my-8 rounded-lg relative">
+        <div id="resume-content">
+            <!-- Header Section -->
+            <header class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-gray-900">PRINCE KUMAR</h1>
+                <p class="text-lg text-blue-600 font-medium mt-1">Data Engineer</p>
+                <div class="flex justify-center items-center flex-wrap gap-x-6 gap-y-2 mt-4 text-sm text-gray-600">
+                    <a href="mailto:princedevelopment2004@gmail.com" class="hover:text-blue-600 transition-colors duration-300">
+                        <i class="fas fa-envelope mr-1"></i> princedevelopment2004@gmail.com
+                    </a>
+                    <a href="tel:+918439933390" class="hover:text-blue-600 transition-colors duration-300">
+                        <i class="fas fa-phone-alt mr-1"></i> +91 8439933390
+                    </a>
+                    <a href="https://www.linkedin.com/in/developmentprince/" target="_blank" class="hover:text-blue-600 transition-colors duration-300">
+                        <i class="fab fa-linkedin mr-1"></i> LinkedIn
+                    </a>
+                     <a href="https://github.com/PrinceKumar066" target="_blank" class="hover:text-blue-600 transition-colors duration-300">
+                        <i class="fab fa-github mr-1"></i> GitHub
+                    </a>
+                </div>
+            </header>
+
+            <!-- Professional Summary -->
+            <section class="mb-8">
+                 <div class="flex justify-between items-center mb-2 flex-wrap gap-2">
+                    <h2 class="text-xl font-bold text-gray-800 pb-2 section-title" style="border-bottom: none;">Professional Summary</h2>
+                </div>
+                 <p id="professionalSummaryText" class="text-gray-700 leading-relaxed">
+                    A motivated and versatile B.Tech student with hands-on training in both Full Stack Development and Data Analytics. Proficient in Python, Java, and web technologies, with practical experience in building responsive web applications and analyzing data to drive improvements. Eager to apply a strong foundation in computer science principles and a passion for problem-solving to a challenging entry-level role.
+                 </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="mb-8">
+                <h2 class="text-xl font-bold text-gray-800 pb-2 mb-4 section-title">Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-700">
+                    <div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Programming & Languages</h3>
+                        <p>Java, Python, SQL, HTML, CSS, JavaScript</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Databases & Tools</h3>
+                        <p>SQL, Vs Code, Jupiter Notebook, GitHub</p>
+                    </div>
+                     <div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Soft Skills</h3>
+                        <p>Communication, Teamwork, Problem-Solving, Time Management, Critical Thinking</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experienceSection" class="mb-8">
+                <h2 class="text-xl font-bold text-gray-800 pb-2 mb-4 section-title">Experience</h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-semibold text-gray-900">Data Analytics Trainee</h3>
+                            <p class="text-sm font-medium text-gray-600">Feb 2025 - Apr 2025</p>
+                        </div>
+                        <p class="text-md text-gray-700 italic">NIET - Greater Noida</p>
+                        <div class="text-gray-700 leading-relaxed mt-2">
+                            <p>Analyzed student performance data using Python and SQL to identify key areas for academic improvement, resulting in a 15% increase in student satisfaction scores over two semesters. Learned fundamentals of Data Analytics, including SQL lite, MongoDB, Python Libraries and built 5+ data analytics project.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-semibold text-gray-900">Full Stack Developer Trainee</h3>
+                            <p class="text-sm font-medium text-gray-600">Aug 2024 - Sep 2024</p>
+                        </div>
+                        <p class="text-md text-gray-700 italic">NIET - Greater Noida</p>
+                        <div class="text-gray-700 leading-relaxed mt-2">
+                            <p>Learned the fundamentals of web development, including HTML, CSS, and JavaScript, and built 5+ responsive webpages for frontend design. Introduced to backend development with Node.js and Express.js, developing 3+ APIs for data handling.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Projects Section -->
+            <section id="projectsSection" class="mb-8">
+                <h2 class="text-xl font-bold text-gray-800 pb-2 mb-4 section-title">Projects</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">Myntra Clone</h3>
+                        <p class="text-gray-700 leading-relaxed">Developed a fully responsive Myntra clone using HTML, CSS, and JavaScript. Implemented dynamic product listings, interactive UI, and category-based filtering. Focused on replicating the original design and enhancing user experience across devices.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">Voice-Controlled Smart Mirror</h3>
+                        <p class="text-gray-700 leading-relaxed">This project creates a Voice-Controlled Smart Mirror interface using only web technologies (HTML, CSS, and JavaScript). This webpage would run on a screen placed behind a two-way mirror, giving you a futuristic display that provides information and responds to your voice.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="mb-8">
+                <h2 class="text-xl font-bold text-gray-900 pb-2 mb-4 section-title">Education</h2>
+                <div class="space-y-4">
+                    <div class="mb-4">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-semibold text-gray-900">Noida Institute of Engineering and Technology, Greater Noida</h3>
+                            <p class="text-sm font-medium text-gray-600">2022 - 2026</p>
+                        </div>
+                        <p class="text-md text-gray-700">Bachelor of Technology (B.Tech) - GPA: 6.88 (up to 5th Sem)</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-semibold text-gray-900">Senior Secondary (XII), A.N.D.P Inter College, Amroha (UP Board)</h3>
+                            <p class="text-sm font-medium text-gray-600">2022</p>
+                        </div>
+                        <p class="text-md text-gray-700">Percentage: 80.80%</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-lg font-semibold text-gray-900">Secondary (X), Ch. Sukhlal Singh Inter College, Amroha (UP Board)</h3>
+                            <p class="text-sm font-medium text-gray-600">2020 </p>
+                        </div>
+                        <p class="text-md text-gray-700">Percentage: 82.33%  </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section>
+                <h2 class="text-xl font-bold text-gray-800 pb-2 mb-4 section-title">Certifications</h2>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li><strong>The Complete 2024 Web Development Bootcamp</strong> - Dr. Angela Yu, Udemy</li>
+                    <li><strong>Python for Data Science, AI & Development</strong> - IBM, Coursera</li>
+                    <li><strong>Data Analysis with Python</strong> - IBM, Coursera</li>
+                    <li><strong>Java Programming Fundamentals</strong> - Infosys Springboard</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Modal for API Response -->
+    <div id="apiResponseModal" class="no-print fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center hidden z-50 p-4">
+        <div class="bg-white rounded-lg shadow-2xl p-6 sm:p-8 max-w-2xl w-full">
+            <div class="flex justify-between items-center mb-4">
+                <h3 id="modalTitle" class="text-2xl font-bold text-gray-800">✨ AI Suggestions</h3>
+                <button id="closeModalBtn" class="text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            </div>
+            <div id="modalContent" class="text-gray-700 leading-relaxed max-h-[60vh] overflow-y-auto pr-2" style="white-space: pre-wrap;">
+                <!-- Content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" class="no-print fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-32 w-32"></div>
+    </div>
+
+    <script>
+        // --- DOM Elements ---
+        const enhanceSummaryBtn = document.getElementById('enhanceSummaryBtn');
+        const tailorResumeBtn = document.getElementById('tailorResumeBtn');
+        const generateCoverLetterBtn = document.getElementById('generateCoverLetterBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        const apiResponseModal = document.getElementById('apiResponseModal');
+        const modalContent = document.getElementById('modalContent');
+        const modalTitle = document.getElementById('modalTitle');
+        const downloadPdfBtn = document.getElementById('downloadPdfBtn');
+        
+        // --- Event Listeners ---
+        enhanceSummaryBtn.addEventListener('click', handleEnhanceSummary);
+        tailorResumeBtn.addEventListener('click', handleTailorResume);
+        generateCoverLetterBtn.addEventListener('click', handleGenerateCoverLetter);
+        closeModalBtn.addEventListener('click', hideModal);
+        downloadPdfBtn.addEventListener('click', generatePdf);
+        apiResponseModal.addEventListener('click', (e) => {
+            if (e.target === apiResponseModal) {
+                hideModal();
+            }
+        });
+
+        // --- Functions ---
+        function showLoader() {
+            loadingIndicator.classList.remove('hidden');
+        }
+
+        function hideLoader() {
+            loadingIndicator.classList.add('hidden');
+        }
+
+        function showModal(title, content) {
+            modalTitle.textContent = title;
+            modalContent.textContent = content;
+            apiResponseModal.classList.remove('hidden');
+        }
+
+        function hideModal() {
+            apiResponseModal.classList.add('hidden');
+            modalContent.textContent = '';
+        }
+
+        /**
+         * Generates and downloads the resume as a PDF.
+         */
+        function generatePdf() {
+            const element = document.getElementById('resume-content');
+            const aiSection = document.getElementById('ai-assistants');
+            const downloadBtn = document.getElementById('downloadPdfBtn');
+            
+            // Hide the sections we don't want in the PDF
+            aiSection.style.display = 'none';
+            downloadBtn.style.display = 'none';
+
+            const opt = {
+                margin:       0.5,
+                filename:     'Prince_Kumar_Resume.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2, useCORS: true },
+                jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            // Generate the PDF
+            html2pdf().from(element).set(opt).save().then(() => {
+                // Show the sections again after the PDF is saved
+                aiSection.style.display = 'block';
+                downloadBtn.style.display = 'flex';
+            });
+        }
+
+        /**
+         * Calls the Gemini API with a given prompt.
+         * Implements exponential backoff for retries.
+         * @param {string} prompt The prompt to send to the API.
+         * @returns {Promise<string>} The text response from the API.
+         */
+        async function callGeminiAPI(prompt, maxRetries = 3) {
+            showLoader();
+            const apiKey = ""; // API key will be injected by the environment
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+            
+            const payload = {
+                contents: [{ role: "user", parts: [{ text: prompt }] }],
+            };
+
+            for (let i = 0; i < maxRetries; i++) {
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API request failed with status ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        hideLoader();
+                        return result.candidates[0].content.parts[0].text;
+                    } else {
+                        throw new Error('Invalid response structure from API');
+                    }
+                } catch (error) {
+                    console.error(`Attempt ${i + 1} failed:`, error);
+                    if (i === maxRetries - 1) {
+                        hideLoader();
+                        showModal("Error", `An error occurred after multiple retries: ${error.message}. Please check the console for details.`);
+                        return null;
+                    }
+                    const delay = Math.pow(2, i) * 1000; // Exponential backoff
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                }
+            }
+        }
+
+        /**
+         * Handles the "Enhance Summary" button click.
+         */
+        async function handleEnhanceSummary() {
+            const summaryElement = document.getElementById('professionalSummaryText');
+            const currentSummary = summaryElement.textContent.trim();
+            const currentRole = "Data Engineer"; // As per the resume title
+
+            const prompt = `Please rewrite the following professional summary to be more impactful and tailored for a "${currentRole}" position. Focus on key data engineering skills and potential achievements. Keep it concise (3-4 sentences).
+
+Current Summary:
+"${currentSummary}"`;
+
+            const enhancedSummary = await callGeminiAPI(prompt);
+            if (enhancedSummary) {
+                showModal("✨ Enhanced Summary", enhancedSummary);
+            }
+        }
+
+        /**
+         * Handles the "Tailor Resume" button click.
+         */
+        async function handleTailorResume() {
+            const jobTitleInput = document.getElementById('jobTitleInput');
+            const jobTitle = jobTitleInput.value.trim();
+
+            if (!jobTitle) {
+                showModal("Input Required", "Please enter a job title first.");
+                return;
+            }
+
+            const experienceText = document.getElementById('experienceSection').innerText;
+            const projectsText = document.getElementById('projectsSection').innerText;
+
+            const prompt = `Based on the resume sections below, generate 3-5 improved, action-oriented bullet points tailored specifically for a "${jobTitle}" role. Focus on quantifiable achievements where possible.
+
+Resume Experience Section:
+---
+${experienceText}
+---
+
+Resume Projects Section:
+---
+${projectsText}
+---
+
+Provide the tailored bullet points below:`;
+
+            const tailoredPoints = await callGeminiAPI(prompt);
+            if (tailoredPoints) {
+                showModal(`✨ Suggestions for "${jobTitle}"`, tailoredPoints);
+            }
+        }
+
+        /**
+         * Handles the "Generate Cover Letter" button click.
+         */
+        async function handleGenerateCoverLetter() {
+            const jobTitleInput = document.getElementById('jobTitleInput');
+            const jobTitle = jobTitleInput.value.trim();
+
+            if (!jobTitle) {
+                showModal("Input Required", "Please enter a job title in the AI Resume Assistant box first.");
+                return;
+            }
+
+            const resumeText = document.getElementById('resume-content').innerText;
+
+            const prompt = `Based on the complete resume provided below, write a professional and compelling cover letter for the position of "${jobTitle}". The cover letter should be three paragraphs long, highlight the most relevant skills and experiences, and express enthusiasm for the role.
+
+Resume Content:
+---
+${resumeText}
+---
+
+Generate the cover letter now:`;
+
+            const coverLetter = await callGeminiAPI(prompt);
+            if (coverLetter) {
+                showModal(`✨ Cover Letter for "${jobTitle}"`, coverLetter);
+            }
+        }
+    </script>
+</body>
+</html>
